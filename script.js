@@ -1,15 +1,9 @@
 document.getElementById("quiz-form").addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const questions = document.querySelectorAll(".question");
-  const scores = {
-    Analytical: 0,
-    Experiential: 0,
-    Creative: 0,
-    Collaborative: 0,
-    Organized: 0,
-  };
-
+  const scores = {};
+  const counts = {};
+  
   const questions = document.querySelectorAll(".question");
   
   questions.forEach((q) => {
@@ -17,24 +11,18 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
     const reverse = q.dataset.reverse === "true";
     const selected = q.querySelector('input[type="radio"]:checked');
   
+    if (!scores[category]) {
+      scores[category] = 0;
+      counts[category] = 0;
+    }
+  
     if (selected) {
       let value = parseInt(selected.value);
-      if (reverse) value = 6 - value; // flip the value if reverse-scored
+      if (reverse) value = 6 - value;
       scores[category] += value;
+      counts[category]++;
     }
   });
-  
-//  const counts = { ...scores };
-
-//  questions.forEach((q) => {
-//    const category = q.dataset.category;
-//    const reverse = q.dataset.reverse === "true";
-//    const value = parseInt(q.querySelector("select").value);
-//    const score = reverse ? 6 - value : value;
-
-//    scores[category] += score;
-//    counts[category]++;
-//  });
 
   // Scale scores to 0–100
   const scaled = {};
