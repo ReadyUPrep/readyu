@@ -72,4 +72,18 @@ if (sorted.length >= 2) {
     `Top 1: ${top1}, Top 2: ${top2}\nScore Summary: ` +
     sorted.map(([cat, score]) => `${cat}: ${Math.round(score)}`).join(", ");
   document.getElementById("results").style.display = "block";
+  };
+                                                      window.onload = function () {
+  const container = document.getElementById("question-container");
+  const questions = Array.from(container.querySelectorAll(".question"));
+
+  // Fisher-Yates shuffle
+  for (let i = questions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [questions[i], questions[j]] = [questions[j], questions[i]];
+  }
+
+  // Clear and re-add in random order
+  container.innerHTML = "";
+  questions.forEach(q => container.appendChild(q));
 });
