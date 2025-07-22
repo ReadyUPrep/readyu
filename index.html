@@ -9,30 +9,69 @@
 <body>
   <h1>What's Your Learning Style?</h1>
   <form id="quiz-form">
-    <div class="question" data-category="Analytical" data-reverse="false">
-      <p>I often notice patterns in what I learn.</p>
-      <select name="q1">
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree</option>
-        <option value="3">Neutral</option>
-        <option value="4">Agree</option>
-        <option value="5">Strongly Agree</option>
-      </select>
+    <div id="question-container">
+      <div class="question">
+        <p class="question-text">I often notice patterns in information that others may miss.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q1" value="1" required></label>
+          <label><input type="radio" name="q1" value="2"></label>
+          <label><input type="radio" name="q1" value="3"></label>
+          <label><input type="radio" name="q1" value="4"></label>
+          <label><input type="radio" name="q1" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+      
+      <div class="question">
+        <p class="question-text">When faced with complex data, I quickly spot recurring themes or sequences.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q1" value="1" required></label>
+          <label><input type="radio" name="q1" value="2"></label>
+          <label><input type="radio" name="q1" value="3"></label>
+          <label><input type="radio" name="q1" value="4"></label>
+          <label><input type="radio" name="q1" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p class="question-text">I enjoy working through logic puzzles or problems that require step‑by‑step reasoning.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q1" value="1" required></label>
+          <label><input type="radio" name="q1" value="2"></label>
+          <label><input type="radio" name="q1" value="3"></label>
+          <label><input type="radio" name="q1" value="4"></label>
+          <label><input type="radio" name="q1" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+  
+      <div class="question">
+        <p class="question-text">I can usually trace an argument back to its foundational assumptions to verify its validity.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q1" value="1" required></label>
+          <label><input type="radio" name="q1" value="2"></label>
+          <label><input type="radio" name="q1" value="3"></label>
+          <label><input type="radio" name="q1" value="4"></label>
+          <label><input type="radio" name="q1" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+  
+      <!-- Add more questions here -->
     </div>
-    
-    <div class="question" data-category="Analytical" data-reverse="true">
-      <p>I rarely see hidden links in data sets.</p>
-      <select name="q2">
-        <option value="1">Strongly Disagree</option>
-        <option value="2">Disagree</option>
-        <option value="3">Neutral</option>
-        <option value="4">Agree</option>
-        <option value="5">Strongly Agree</option>
-      </select>
-    </div>
-
-    <!-- Add more questions here -->
-
     <button type="submit">Submit</button>
   </form>
 
