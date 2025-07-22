@@ -9,17 +9,32 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
     Collaborative: 0,
     Organized: 0,
   };
-  const counts = { ...scores };
 
+  const questions = document.querySelectorAll(".question");
+  
   questions.forEach((q) => {
     const category = q.dataset.category;
     const reverse = q.dataset.reverse === "true";
-    const value = parseInt(q.querySelector("select").value);
-    const score = reverse ? 6 - value : value;
-
-    scores[category] += score;
-    counts[category]++;
+    const selected = q.querySelector('input[type="radio"]:checked');
+  
+    if (selected) {
+      let value = parseInt(selected.value);
+      if (reverse) value = 6 - value; // flip the value if reverse-scored
+      scores[category] += value;
+    }
   });
+  
+//  const counts = { ...scores };
+
+//  questions.forEach((q) => {
+//    const category = q.dataset.category;
+//    const reverse = q.dataset.reverse === "true";
+//    const value = parseInt(q.querySelector("select").value);
+//    const score = reverse ? 6 - value : value;
+
+//    scores[category] += score;
+//    counts[category]++;
+//  });
 
   // Scale scores to 0–100
   const scaled = {};
@@ -81,7 +96,7 @@ if (sorted.length >= 2) {
   for (let i = questions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [questions[i], questions[j]] = [questions[j], questions[i]];
-  }
+  };
 
   // Clear and re-add in random order
   container.innerHTML = "";
