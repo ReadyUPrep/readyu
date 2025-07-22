@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.question {
+  margin-bottom: 15px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

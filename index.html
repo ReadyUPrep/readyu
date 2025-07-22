@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning Style Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>What's Your Learning Style?</h1>
+  <form id="quiz-form">
+    <div class="question" data-category="Analytical" data-reverse="false">
+      <p>I often notice patterns in what I learn.</p>
+      <select name="q1">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="3">Neutral</option>
+        <option value="4">Agree</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+    
+    <div class="question" data-category="Analytical" data-reverse="true">
+      <p>I rarely see hidden links in data sets.</p>
+      <select name="q2">
+        <option value="1">Strongly Disagree</option>
+        <option value="2">Disagree</option>
+        <option value="3">Neutral</option>
+        <option value="4">Agree</option>
+        <option value="5">Strongly Agree</option>
+      </select>
+    </div>
+
+    <!-- Add more questions here -->
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="results" style="display:none;">
+    <h2>Your Archetype:</h2>
+    <p id="archetype-name"></p>
+    <p id="archetype-desc"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
