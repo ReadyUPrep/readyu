@@ -31,13 +31,8 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
       scaled[cat] = ((scores[cat] - counts[cat]) / (4 * counts[cat])) * 100;
     }
   }
-
-  // Sort categories
-//  const sorted = Object.entries(scaled).sort((a, b) => b[1] - a[1]);
-//  const [top1, top2] = [sorted[0][0], sorted[1][0]];
-
-  // NEW ONES:
-  // Convert the scaled scores object into a sortable array
+  
+// Convert the scaled scores object into a sortable array
 const sorted = Object.entries(scaled)
   .filter(entry => typeof entry[1] === "number") // filter out any undefined or non-number entries
   .sort((a, b) => b[1] - a[1]); // sort descending by score
@@ -47,7 +42,7 @@ if (sorted.length >= 2) {
   const top1 = sorted[0][0];
   const top2 = sorted[1][0];
 
-  // Continue with your personality typing logic here
+  // Continue with personality typing logic
   console.log("Top two categories:", top1, top2);
 
   // Archetype lookup
