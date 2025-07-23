@@ -7,9 +7,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>What's Your Learning Style?</h1>
+  <h1>Find Your ReadyU Learning Archetype</h1>
   <form id="quiz-form" action="javascript:void(0)">
     <div id="question-container">
+
+      <!-- ANALYTICAL -->
+
       <div class="question" data-category="Analytical" data-reverse="false">
         <p class="question-text">I often notice patterns in information that others may miss.</p>
         <div class="likert-scale">
@@ -41,7 +44,7 @@
       </div>
   
       <div class="question" data-category="Analytical" data-reverse="false">
-        <p class="question-text">I enjoy working through logic puzzles or problems that require step‑by‑step reasoning.</p>
+        <p class="question-text">I enjoy working through logic puzzles or problems that require step-by-step reasoning.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q3" value="1" required></label>
           <label><input type="radio" name="q3" value="2"></label>
@@ -100,10 +103,8 @@
         </div>
       </div>
 
-<!-- add more analytical -->
-
-      <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I remember new ideas best when I physically handle or manipulate something related to them.</p>
+      <div class="question" data-category="Analytical" data-reverse="false">
+        <p class="question-text">I seek to thoroughly understand the concepts behind content, sometimes at the expense of time.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q7" value="1" required></label>
           <label><input type="radio" name="q7" value="2"></label>
@@ -116,9 +117,9 @@
           <span>Strongly Agree</span>
         </div>
       </div>
-      
-      <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I can often recall how to perform a task by replaying physical motions or remembering details such as texture, movement, or sound.</p>
+
+      <div class="question" data-category="Analytical" data-reverse="false">
+        <p class="question-text">I naturally think of and seek to understand edge cases outside of the content taught to me.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q8" value="1" required></label>
           <label><input type="radio" name="q8" value="2"></label>
@@ -131,9 +132,9 @@
           <span>Strongly Agree</span>
         </div>
       </div>
-  
-      <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I approach problems by experimenting with several different approaches, even if I may encounter failure.</p>
+
+      <div class="question" data-category="Analytical" data-reverse="false">
+        <p class="question-text">I rarely accept a claim without first looking for supporting data or credible sources.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q9" value="1" required></label>
           <label><input type="radio" name="q9" value="2"></label>
@@ -146,9 +147,9 @@
           <span>Strongly Agree</span>
         </div>
       </div>
-  
-      <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I view mistakes as useful feedback and quickly adjust my strategy after each error.</p>
+
+      <div class="question" data-category="Analytical" data-reverse="false">
+        <p class="question-text">When making decisions, I prefer to rely on facts and statistics rather than personal opinions or perspectives.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q10" value="1" required></label>
           <label><input type="radio" name="q10" value="2"></label>
@@ -161,9 +162,11 @@
           <span>Strongly Agree</span>
         </div>
       </div>
+      
+<!-- EXPERIENTIAL -->
 
       <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I learn best when I can link a concept to a real‑life task or scenario.</p>
+        <p class="question-text">I remember new ideas best when I physically handle or manipulate something related to them.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q11" value="1" required></label>
           <label><input type="radio" name="q11" value="2"></label>
@@ -176,9 +179,9 @@
           <span>Strongly Agree</span>
         </div>
       </div>
-
+      
       <div class="question" data-category="Experiential" data-reverse="false">
-        <p class="question-text">I often ask how classroom information can be applied outside of school or in everyday situations.</p>
+        <p class="question-text">I can often recall how to perform a task by replaying physical motions or remembering details such as texture, movement, or sound.</p>
         <div class="likert-scale">
           <label><input type="radio" name="q12" value="1" required></label>
           <label><input type="radio" name="q12" value="2"></label>
@@ -191,8 +194,582 @@
           <span>Strongly Agree</span>
         </div>
       </div>
+  
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I approach problems by experimenting with several different approaches, even if I may encounter failure.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q13" value="1" required></label>
+          <label><input type="radio" name="q13" value="2"></label>
+          <label><input type="radio" name="q13" value="3"></label>
+          <label><input type="radio" name="q13" value="4"></label>
+          <label><input type="radio" name="q13" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+  
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I view mistakes as useful feedback and quickly adjust my strategy after each error.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q14" value="1" required></label>
+          <label><input type="radio" name="q14" value="2"></label>
+          <label><input type="radio" name="q14" value="3"></label>
+          <label><input type="radio" name="q14" value="4"></label>
+          <label><input type="radio" name="q14" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I learn best when I can link a concept to a real-life task or scenario.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q15" value="1" required></label>
+          <label><input type="radio" name="q15" value="2"></label>
+          <label><input type="radio" name="q15" value="3"></label>
+          <label><input type="radio" name="q15" value="4"></label>
+          <label><input type="radio" name="q15" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I often ask how classroom information can be applied outside of school or in everyday situations.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q16" value="1" required></label>
+          <label><input type="radio" name="q16" value="2"></label>
+          <label><input type="radio" name="q16" value="3"></label>
+          <label><input type="radio" name="q16" value="4"></label>
+          <label><input type="radio" name="q16" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
       
-      <!-- Add more questions here -->
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I learn best through labs, demonstrations, or field trips rather than through lectures.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q17" value="1" required></label>
+          <label><input type="radio" name="q17" value="2"></label>
+          <label><input type="radio" name="q17" value="3"></label>
+          <label><input type="radio" name="q17" value="4"></label>
+          <label><input type="radio" name="q17" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I more effectively retain content through hands-on experiments than through reading textbooks or listening to presentations.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q18" value="1" required></label>
+          <label><input type="radio" name="q18" value="2"></label>
+          <label><input type="radio" name="q18" value="3"></label>
+          <label><input type="radio" name="q18" value="4"></label>
+          <label><input type="radio" name="q18" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+      
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">After seeing a demonstration, I would prefer to try it myself immediately rather than ruminating for a long time before taking action.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q19" value="1" required></label>
+          <label><input type="radio" name="q19" value="2"></label>
+          <label><input type="radio" name="q19" value="3"></label>
+          <label><input type="radio" name="q19" value="4"></label>
+          <label><input type="radio" name="q19" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+      
+      <div class="question" data-category="Experiential" data-reverse="false">
+        <p class="question-text">I feel most confident when I can practice a skill right after observing it.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q20" value="1" required></label>
+          <label><input type="radio" name="q20" value="2"></label>
+          <label><input type="radio" name="q20" value="3"></label>
+          <label><input type="radio" name="q20" value="4"></label>
+          <label><input type="radio" name="q20" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+      
+      <!-- SOCIAL -->
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">Group conversations help me understand course concepts more deeply.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q21" value="1" required></label>
+          <label><input type="radio" name="q21" value="2"></label>
+          <label><input type="radio" name="q21" value="3"></label>
+          <label><input type="radio" name="q21" value="4"></label>
+          <label><input type="radio" name="q21" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+      
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">When I encounter a confusing topic, my first instinct is to talk through it with peers.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q22" value="1" required></label>
+          <label><input type="radio" name="q22" value="2"></label>
+          <label><input type="radio" name="q22" value="3"></label>
+          <label><input type="radio" name="q22" value="4"></label>
+          <label><input type="radio" name="q22" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">Explaining material to classmates helps me solidify my own understanding.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q23" value="1" required></label>
+          <label><input type="radio" name="q23" value="2"></label>
+          <label><input type="radio" name="q23" value="3"></label>
+          <label><input type="radio" name="q23" value="4"></label>
+          <label><input type="radio" name="q23" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I volunteer to tutor or coach others when they struggle with content I know well.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q24" value="1" required></label>
+          <label><input type="radio" name="q24" value="2"></label>
+          <label><input type="radio" name="q24" value="3"></label>
+          <label><input type="radio" name="q24" value="4"></label>
+          <label><input type="radio" name="q24" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I learn best when my peers explain concepts to me from the material we were taught.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q25" value="1" required></label>
+          <label><input type="radio" name="q25" value="2"></label>
+          <label><input type="radio" name="q25" value="3"></label>
+          <label><input type="radio" name="q25" value="4"></label>
+          <label><input type="radio" name="q25" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+            <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I can learn key ideas and make breakthroughs just from talking with my peers.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q26" value="1" required></label>
+          <label><input type="radio" name="q26" value="2"></label>
+          <label><input type="radio" name="q26" value="3"></label>
+          <label><input type="radio" name="q26" value="4"></label>
+          <label><input type="radio" name="q26" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I learn best through collaborative projects rather than through independent work.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q27" value="1" required></label>
+          <label><input type="radio" name="q27" value="2"></label>
+          <label><input type="radio" name="q27" value="3"></label>
+          <label><input type="radio" name="q27" value="4"></label>
+          <label><input type="radio" name="q27" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I prefer to share ideas and make conclusions collaboratively rather than process ideas and draw conclusions on my own.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q28" value="1" required></label>
+          <label><input type="radio" name="q28" value="2"></label>
+          <label><input type="radio" name="q28" value="3"></label>
+          <label><input type="radio" name="q28" value="4"></label>
+          <label><input type="radio" name="q28" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">Hearing unique anecdotes from others about what we’ve learned often helps me recall key concepts.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q29" value="1" required></label>
+          <label><input type="radio" name="q29" value="2"></label>
+          <label><input type="radio" name="q29" value="3"></label>
+          <label><input type="radio" name="q29" value="4"></label>
+          <label><input type="radio" name="q29" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Social" data-reverse="false">
+        <p class="question-text">I often ask teammates for examples from their experience to clarify new concepts.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q30" value="1" required></label>
+          <label><input type="radio" name="q30" value="2"></label>
+          <label><input type="radio" name="q30" value="3"></label>
+          <label><input type="radio" name="q30" value="4"></label>
+          <label><input type="radio" name="q30" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <!-- CREATIVE -->
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I flourish in academic settings that promote creative idea generation over structured assignments.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q31" value="1" required></label>
+          <label><input type="radio" name="q31" value="2"></label>
+          <label><input type="radio" name="q31" value="3"></label>
+          <label><input type="radio" name="q31" value="4"></label>
+          <label><input type="radio" name="q31" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I can quickly come up with many different ideas when solving a problem.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q32" value="1" required></label>
+          <label><input type="radio" name="q32" value="2"></label>
+          <label><input type="radio" name="q32" value="3"></label>
+          <label><input type="radio" name="q32" value="4"></label>
+          <label><input type="radio" name="q32" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I often picture vivid images or scenes in my mind when thinking through ideas.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q33" value="1" required></label>
+          <label><input type="radio" name="q33" value="2"></label>
+          <label><input type="radio" name="q33" value="3"></label>
+          <label><input type="radio" name="q33" value="4"></label>
+          <label><input type="radio" name="q33" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I learn most effectively by mentally visualizing information.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q34" value="1" required></label>
+          <label><input type="radio" name="q34" value="2"></label>
+          <label><input type="radio" name="q34" value="3"></label>
+          <label><input type="radio" name="q34" value="4"></label>
+          <label><input type="radio" name="q34" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I frequently use metaphors or analogies to explain difficult concepts.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q35" value="1" required></label>
+          <label><input type="radio" name="q35" value="2"></label>
+          <label><input type="radio" name="q35" value="3"></label>
+          <label><input type="radio" name="q35" value="4"></label>
+          <label><input type="radio" name="q35" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I learn content effectively by comparing ideas I’m studying to concepts from other fields.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q36" value="1" required></label>
+          <label><input type="radio" name="q36" value="2"></label>
+          <label><input type="radio" name="q36" value="3"></label>
+          <label><input type="radio" name="q36" value="4"></label>
+          <label><input type="radio" name="q36" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I prefer academic subjects where answers are subjective rather than there being a single “right” answer.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q37" value="1" required></label>
+          <label><input type="radio" name="q37" value="2"></label>
+          <label><input type="radio" name="q37" value="3"></label>
+          <label><input type="radio" name="q37" value="4"></label>
+          <label><input type="radio" name="q37" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I feel energized by challenges that require original or unconventional thinking.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q38" value="1" required></label>
+          <label><input type="radio" name="q38" value="2"></label>
+          <label><input type="radio" name="q38" value="3"></label>
+          <label><input type="radio" name="q38" value="4"></label>
+          <label><input type="radio" name="q38" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I often imagine alternative possibilities, even when focusing on the most likely outcome to the task at hand would be more beneficial.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q39" value="1" required></label>
+          <label><input type="radio" name="q39" value="2"></label>
+          <label><input type="radio" name="q39" value="3"></label>
+          <label><input type="radio" name="q39" value="4"></label>
+          <label><input type="radio" name="q39" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Creative" data-reverse="false">
+        <p class="question-text">I frequently speculate about different ways a concept can be tested to understand the content better.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q40" value="1" required></label>
+          <label><input type="radio" name="q40" value="2"></label>
+          <label><input type="radio" name="q40" value="3"></label>
+          <label><input type="radio" name="q40" value="4"></label>
+          <label><input type="radio" name="q40" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <!-- ORGANIZED -->
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">During lectures, I always keep my notes structured with headings and bullet points.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q41" value="1" required></label>
+          <label><input type="radio" name="q41" value="2"></label>
+          <label><input type="radio" name="q41" value="3"></label>
+          <label><input type="radio" name="q41" value="4"></label>
+          <label><input type="radio" name="q41" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">Reviewing my thorough notes later gives me most of what I need to study.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q42" value="1" required></label>
+          <label><input type="radio" name="q42" value="2"></label>
+          <label><input type="radio" name="q42" value="3"></label>
+          <label><input type="radio" name="q42" value="4"></label>
+          <label><input type="radio" name="q42" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I frequently use checklists or similar tools to help me feel organized when completing multi-step tasks.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q43" value="1" required></label>
+          <label><input type="radio" name="q43" value="2"></label>
+          <label><input type="radio" name="q43" value="3"></label>
+          <label><input type="radio" name="q43" value="4"></label>
+          <label><input type="radio" name="q43" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">In my day-to-day, I rely on tools like to-do lists, spreadsheets, and schedules to plan nearly everything, sometimes even the most mundane or fun activities.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q44" value="1" required></label>
+          <label><input type="radio" name="q44" value="2"></label>
+          <label><input type="radio" name="q44" value="3"></label>
+          <label><input type="radio" name="q44" value="4"></label>
+          <label><input type="radio" name="q44" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I work best when my study sessions are routinely scheduled at the same time(s) each day.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q45" value="1" required></label>
+          <label><input type="radio" name="q45" value="2"></label>
+          <label><input type="radio" name="q45" value="3"></label>
+          <label><input type="radio" name="q45" value="4"></label>
+          <label><input type="radio" name="q45" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I am focused and perform best when my study session is highly structured, using methods like the Pomodoro Technique.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q46" value="1" required></label>
+          <label><input type="radio" name="q46" value="2"></label>
+          <label><input type="radio" name="q46" value="3"></label>
+          <label><input type="radio" name="q46" value="4"></label>
+          <label><input type="radio" name="q46" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I organize digital files, notes, and/or emails into systematically labeled folders or tags.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q47" value="1" required></label>
+          <label><input type="radio" name="q47" value="2"></label>
+          <label><input type="radio" name="q47" value="3"></label>
+          <label><input type="radio" name="q47" value="4"></label>
+          <label><input type="radio" name="q47" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I process information best by organizing concepts into a categorical system.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q48" value="1" required></label>
+          <label><input type="radio" name="q48" value="2"></label>
+          <label><input type="radio" name="q48" value="3"></label>
+          <label><input type="radio" name="q48" value="4"></label>
+          <label><input type="radio" name="q48" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">I am confident in my ability to organize and thoughtfully complete many tasks within a short time.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q49" value="1" required></label>
+          <label><input type="radio" name="q49" value="2"></label>
+          <label><input type="radio" name="q49" value="3"></label>
+          <label><input type="radio" name="q49" value="4"></label>
+          <label><input type="radio" name="q49" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
+
+      <div class="question" data-category="Organized" data-reverse="false">
+        <p class="question-text">When surrounded by clutter, whether mental or physical, I feel a sense of comfort and fulfillment by sorting through it.</p>
+        <div class="likert-scale">
+          <label><input type="radio" name="q50" value="1" required></label>
+          <label><input type="radio" name="q50" value="2"></label>
+          <label><input type="radio" name="q50" value="3"></label>
+          <label><input type="radio" name="q50" value="4"></label>
+          <label><input type="radio" name="q50" value="5"></label>
+        </div>
+        <div class="scale-labels">
+          <span>Strongly Disagree</span>
+          <span>Strongly Agree</span>
+        </div>
+      </div>
     
     </div>
     <button type="submit">Submit</button>
