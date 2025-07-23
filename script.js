@@ -49,10 +49,6 @@ if (sorted.length >= 2) {
 
   // Continue with your personality typing logic here
   console.log("Top two categories:", top1, top2);
-} else {
-  // Handle error gracefully
-  alert("Not enough valid category scores to determine result.");
-}
 
   // Archetype lookup
   const archetypes = {
@@ -75,5 +71,10 @@ if (sorted.length >= 2) {
     `Top 1: ${top1}, Top 2: ${top2}\nScore Summary: ` +
     sorted.map(([cat, score]) => `${cat}: ${Math.round(score)}`).join(", ");
   document.getElementById("results").style.display = "block";
+
+} else {
+  // Handle error gracefully
+  alert("Not enough valid category scores to determine result.");
+}
   
 });
