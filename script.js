@@ -205,11 +205,13 @@ for (let i = 1; i <= 50/*questions.length*/; i++) {
 
   question.innerHTML = `
     <p>${i}. ${q.text}</p>
-    <label><input type="radio" name="q${i}" value="1" required> Strongly Disagree</label>
-    <label><input type="radio" name="q${i}" value="2"> Disagree</label>
-    <label><input type="radio" name="q${i}" value="3"> Neutral</label>
-    <label><input type="radio" name="q${i}" value="4"> Agree</label>
-    <label><input type="radio" name="q${i}" value="5"> Strongly Agree</label>
+    <div class="likert-scale">
+      <label><input type="radio" name="q${i}" value="1"> Strongly Disagree</label>
+      <label><input type="radio" name="q${i}" value="2"> Disagree</label>
+      <label><input type="radio" name="q${i}" value="3"> Neutral</label>
+      <label><input type="radio" name="q${i}" value="4"> Agree</label>
+      <label><input type="radio" name="q${i}" value="5"> Strongly Agree</label>
+    </div>
   `;
 
   document.getElementById("quiz-container").appendChild(question);
