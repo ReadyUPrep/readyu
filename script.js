@@ -229,7 +229,7 @@ document.querySelectorAll('.question').forEach(q => {
   }
 });
 
-fetch("https://script.google.com/macros/s/AKfycbwX43Vfj0kG2AbKdYpvDl87Go1q_aRSGuPw0hxIFE8p5eBNqiXy9oZAOotmrxdcYgmq/exec", {
+fetch("https://script.google.com/macros/s/AKfycby2rZV1hbNZlDUjFgDPeoP6742REgMkvkKssOzatluS-1zfXdVMkD079S10_9qnjsai/exec", {
   method: "POST",
   mode: "cors",
   headers: { "Content-Type": "application/json" },
