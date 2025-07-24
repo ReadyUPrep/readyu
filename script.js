@@ -88,109 +88,109 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
 let questions = [
   // analytical
   { text: "I often notice patterns in information that others may miss.",
-    category: "Analytical", reverse: false },
+    id: 'q1', category: "Analytical", reverse: false },
   { text: "When faced with complex data, I quickly spot recurring themes or sequences.",
-    category: "Analytical", reverse: false },
+    id: 'q2', category: "Analytical", reverse: false },
   { text: "I enjoy working through logic puzzles or problems that require step-by-step reasoning.",
-    category: "Analytical", reverse: false },
+    id: 'q3', category: "Analytical", reverse: false },
   { text: "I can usually trace an argument back to its foundational assumptions to verify its validity.",
-    category: "Analytical", reverse: false },
+    id: 'q4', category: "Analytical", reverse: false },
   { text: "I am good with numbers and calculations.",
-    category: "Analytical", reverse: false },
+    id: 'q5', category: "Analytical", reverse: false },
   { text: "I frame problems through mathematical concepts and equations.",
-    category: "Analytical", reverse: false },
+    id: 'q6', category: "Analytical", reverse: false },
   { text: "I seek to thoroughly understand the concepts behind content, sometimes at the expense of time.",
-    category: "Analytical", reverse: false },
+    id: 'q7', category: "Analytical", reverse: false },
   { text: "I naturally think of and seek to understand edge cases outside of the content taught to me.",
-    category: "Analytical", reverse: false },
+    id: 'q8', category: "Analytical", reverse: false },
   { text: "I rarely accept a claim without first looking for supporting data or credible sources.",
-    category: "Analytical", reverse: false },
+    id: 'q9', category: "Analytical", reverse: false },
   { text: "When making decisions, I prefer to rely on facts and statistics rather than personal opinions or perspectives.",
-    category: "Analytical", reverse: false },
+    id: 'q10', category: "Analytical", reverse: false },
   // experiential
   { text: "I remember new ideas best when I physically handle or manipulate something related to them.",
-    category: "Experiential", reverse: false },
+    id: 'q11', category: "Experiential", reverse: false },
   { text: "I can often recall how to perform a task by replaying physical motions or remembering details such as texture, movement, or sound.",
-    category: "Experiential", reverse: false },
+    id: 'q12', category: "Experiential", reverse: false },
   { text: "I approach problems by experimenting with several different approaches, even if I may encounter failure.",
-    category: "Experiential", reverse: false },
+    id: 'q13', category: "Experiential", reverse: false },
   { text: "I view mistakes as useful feedback and quickly adjust my strategy after each error.",
-    category: "Experiential", reverse: false },
+    id: 'q14', category: "Experiential", reverse: false },
   { text: "I learn best when I can link a concept to a real-life task or scenario.",
-    category: "Experiential", reverse: false },
+    id: 'q15', category: "Experiential", reverse: false },
   { text: "I often ask how classroom information can be applied outside of school or in everyday situations.",
-    category: "Experiential", reverse: false },
+    id: 'q16', category: "Experiential", reverse: false },
   { text: "I learn best through labs, demonstrations, or field trips rather than through lectures.",
-    category: "Experiential", reverse: false },
+    id: 'q17', category: "Experiential", reverse: false },
   { text: "I more effectively retain content through hands-on experiments than through reading textbooks or listening to presentations.",
-    category: "Experiential", reverse: false },
+    id: 'q18', category: "Experiential", reverse: false },
   { text: "After seeing a demonstration, I would prefer to try it myself immediately rather than ruminating for a long time before taking action.",
-    category: "Experiential", reverse: false },
+    id: 'q19', category: "Experiential", reverse: false },
   { text: "I feel most confident when I can practice a skill right after observing it.",
-    category: "Experiential", reverse: false },
+    id: 'q20', category: "Experiential", reverse: false },
   // social
   { text: "Group conversations help me understand course concepts more deeply.",
-    category: "Social", reverse: false },
+    id: 'q21', category: "Social", reverse: false },
   { text: "When I encounter a confusing topic, my first instinct is to talk through it with peers.",
-    category: "Social", reverse: false },
+    id: 'q22', category: "Social", reverse: false },
   { text: "Explaining material to classmates always helps me solidify my own understanding.",
-    category: "Social", reverse: false },
+    id: 'q23', category: "Social", reverse: false },
   { text: "I volunteer to tutor or coach others when they struggle with content I know well.",
-    category: "Social", reverse: false },
+    id: 'q24', category: "Social", reverse: false },
   { text: "I learn best when my peers explain concepts to me from the material we were taught.",
-    category: "Social", reverse: false },
+    id: 'q25', category: "Social", reverse: false },
   { text: "I can learn key ideas and make breakthroughs just from talking with my peers.",
-    category: "Social", reverse: false },
+    id: 'q26', category: "Social", reverse: false },
   { text: "I learn best through collaborative projects rather than through independent work.",
-    category: "Social", reverse: false },
+    id: 'q27', category: "Social", reverse: false },
   { text: "I prefer to share ideas and make conclusions collaboratively rather than process ideas and draw conclusions on my own.",
-    category: "Social", reverse: false },
+    id: 'q28', category: "Social", reverse: false },
   { text: "Hearing unique anecdotes from others about what we’ve learned often helps me recall key concepts.",
-    category: "Social", reverse: false },
+    id: 'q29', category: "Social", reverse: false },
   { text: "I often ask teammates for examples from their experience to clarify new concepts.",
-    category: "Social", reverse: false },
+    id: 'q30', category: "Social", reverse: false },
   // creative
   { text: "I flourish in academic settings that promote creative idea generation over structured assignments.",
-    category: "Creative", reverse: false },
+    id: 'q31', category: "Creative", reverse: false },
   { text: "I can quickly come up with many different ideas when solving a problem.",
-    category: "Creative", reverse: false },
+    id: 'q32', category: "Creative", reverse: false },
   { text: "I often picture vivid images or scenes in my mind when thinking through ideas.",
-    category: "Creative", reverse: false },
+    id: 'q33', category: "Creative", reverse: false },
   { text: "I learn most effectively by mentally visualizing information.",
-    category: "Creative", reverse: false },
+    id: 'q34', category: "Creative", reverse: false },
   { text: "I frequently use metaphors or analogies to explain difficult concepts.",
-    category: "Creative", reverse: false },
+    id: 'q35', category: "Creative", reverse: false },
   { text: "I learn content effectively by comparing ideas I’m studying to concepts from other fields.",
-    category: "Creative", reverse: false },
+    id: 'q36', category: "Creative", reverse: false },
   { text: "I prefer academic subjects where answers are subjective rather than there being a clear correct answer.",
-    category: "Creative", reverse: false },
+    id: 'q37', category: "Creative", reverse: false },
   { text: "I feel energized by challenges that require original or unconventional thinking.",
-    category: "Creative", reverse: false },
+    id: 'q38', category: "Creative", reverse: false },
   { text: "I often imagine alternative possibilities, even when focusing on the most likely outcome to the task at hand would be more beneficial.",
-    category: "Creative", reverse: false },
+    id: 'q39', category: "Creative", reverse: false },
   { text: "I frequently speculate about different ways a concept can be tested to understand the content better.",
-    category: "Creative", reverse: false },
+    id: 'q40', category: "Creative", reverse: false },
   // organized
   { text: "During lectures, I always keep my notes structured with headings and bullet points.",
-    category: "Organized", reverse: false },
+    id: 'q41', category: "Organized", reverse: false },
   { text: "Reviewing my thorough notes later gives me most of what I need to study.",
-    category: "Organized", reverse: false },
+    id: 'q42', category: "Organized", reverse: false },
   { text: "I frequently use checklists or similar tools to help me feel organized when completing multi-step tasks.",
-    category: "Organized", reverse: false },
+    id: 'q43', category: "Organized", reverse: false },
   { text: "In my day-to-day, I rely on tools like to-do lists, spreadsheets, and schedules to plan nearly everything, sometimes even the most mundane or fun activities.",
-    category: "Organized", reverse: false },
+    id: 'q44', category: "Organized", reverse: false },
   { text: "I work best when my study sessions are routinely scheduled at the same time(s) each day.",
-    category: "Organized", reverse: false },
+    id: 'q45', category: "Organized", reverse: false },
   { text: "I am focused and perform best when my study session is highly structured, using methods like the Pomodoro Technique.",
-    category: "Organized", reverse: false },
+    id: 'q46', category: "Organized", reverse: false },
   { text: "I organize digital files, notes, and/or emails into systematically labeled folders or tags.",
-    category: "Organized", reverse: false },
+    id: 'q47', category: "Organized", reverse: false },
   { text: "I process information best by organizing concepts into a categorical system.",
-    category: "Organized", reverse: false },
+    id: 'q48', category: "Organized", reverse: false },
   { text: "I am confident in my ability to organize and thoughtfully complete many tasks within a short time.",
-    category: "Organized", reverse: false },
+    id: 'q49', category: "Organized", reverse: false },
   { text: "When surrounded by clutter, whether mental or physical, I feel a sense of comfort and fulfillment by sorting through it.",
-    category: "Organized", reverse: false },
+    id: 'q50', category: "Organized", reverse: false },
 ];
 
 shuffleArray(questions)
@@ -206,13 +206,36 @@ for (let i = 1; i <= 50/*questions.length*/; i++) {
   question.innerHTML = `
     <p>${i}. ${q.text}</p>
     <div class="likert-scale">
-      <label><input type="radio" name="q${i}" value="1"> Strongly Disagree</label>
-      <label><input type="radio" name="q${i}" value="2"> Disagree</label>
-      <label><input type="radio" name="q${i}" value="3"> Neutral</label>
-      <label><input type="radio" name="q${i}" value="4"> Agree</label>
-      <label><input type="radio" name="q${i}" value="5"> Strongly Agree</label>
+      <label><input type="radio" name="q${q.id}" value="1"> Strongly Disagree</label>
+      <label><input type="radio" name="q${q.id}" value="2"> Disagree</label>
+      <label><input type="radio" name="q${q.id}" value="3"> Neutral</label>
+      <label><input type="radio" name="q${q.id}" value="4"> Agree</label>
+      <label><input type="radio" name="q${q.id}" value="5"> Strongly Agree</label>
     </div>
   `;
 
   document.getElementById("quiz-container").appendChild(question);
+
+// TRYING TO ADD A BACKEND - PLEASE HOLD (BELOW)
+
+const responses = {};
+document.querySelectorAll('.question').forEach(q => {
+  const name = q.querySelector('input[type="radio"]').name; // e.g., "q7"
+  const selected = q.querySelector('input[type="radio"]:checked');
+  if (selected) {
+    responses[name] = parseInt(selected.value);
+  }
+});
+
+fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ responses }) 
+})
+.then(res => res.text())
+.then(text => {
+  console.log("Submission successful:", text);
+})
+.catch(console.error);
+
 }
