@@ -72,8 +72,8 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
     const result = archetypes[key] || "Custom Type";
 
     document.getElementById("archetype-name").innerText = result;
-    document.getElementById("archetype-desc").innerText =
-      `Highest-scoring category: ${top1}, Second highest-scoring category: ${top2}\nScore Summary: ` +
+    document.getElementById("archetype-desc").innerHTML =
+      `<b>Highest-scoring category:</b> ${top1}, <b>Second highest-scoring category:</b> ${top2}<br><b>Score Summary:</b> ` +
       sorted.map(([cat, score]) => `${cat}: ${Math.round(score)}`).join(", ");
     document.getElementById("results").style.display = "block";
 
