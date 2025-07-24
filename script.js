@@ -58,15 +58,15 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
     // Archetype lookup
     const archetypes = {
       "Analytical|Experiential": "Engineer",
-      "Analytical|Collaborative": "Strategist",
+      "Analytical|Social": "Strategist",
       "Analytical|Creative": "Innovator",
       "Analytical|Organized": "Architect",
       "Analytical|Social": "Genius",
-      "Experiential|Collaborative": "Facilitator",
+      "Experiential|Social": "Facilitator",
       "Experiential|Creative": "Maker",
       "Experiential|Organized": "Producer",
-      "Collaborative|Creative": "Storyteller",
-      "Collaborative|Organized": "Coordinator",
+      "Social|Creative": "Storyteller",
+      "Social|Organized": "Coordinator",
       "Creative|Organized": "Designer",
     };
     const key = [top1, top2].sort().join("|");
