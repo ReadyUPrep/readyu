@@ -229,13 +229,17 @@ document.querySelectorAll('.question').forEach(q => {
 
 fetch("https://script.google.com/macros/s/AKfycbwX43Vfj0kG2AbKdYpvDl87Go1q_aRSGuPw0hxIFE8p5eBNqiXy9oZAOotmrxdcYgmq/exec", {
   method: "POST",
+  mode: "cors",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ responses }) 
 })
-.then(res => res.text())
-.then(text => {
-  console.log("Submission successful:", text);
-})
-.catch(console.error);
-
+  .then((res) => res.json())
+  .then((data) => console.log("Success:", data))
+  .catch((err) => console.error("Error:", err));
 }
+// .then(res => res.text())
+// .then(text => {
+//   console.log("Submission successful:", text);
+// })
+// .catch(console.error);
+// }
