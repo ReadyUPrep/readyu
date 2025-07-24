@@ -61,7 +61,6 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
       "Analytical|Social": "Strategist",
       "Analytical|Creative": "Innovator",
       "Analytical|Organized": "Architect",
-      "Analytical|Social": "Genius",
       "Experiential|Social": "Facilitator",
       "Experiential|Creative": "Maker",
       "Experiential|Organized": "Producer",
@@ -74,7 +73,7 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
 
     document.getElementById("archetype-name").innerText = result;
     document.getElementById("archetype-desc").innerText =
-      `Top 1: ${top1}, Top 2: ${top2}\nScore Summary: ` +
+      `Highest-scoring category: ${top1}, Second highest-scoring category: ${top2}\nScore Summary: ` +
       sorted.map(([cat, score]) => `${cat}: ${Math.round(score)}`).join(", ");
     document.getElementById("results").style.display = "block";
 
@@ -83,7 +82,7 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
     alert("Not enough valid category scores to determine result.");
   }
 
-  document.getElementById("submit-button").style.backgroundColor = "green";
+  document.getElementById("submit-button").style.backgroundColor = "#345491";
 });
 
 let questions = [
