@@ -69,7 +69,9 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
       "Creative|Organized": "Designer",
     };
     const key = [top1, top2].sort().join("|");
-    const result = archetypes[key] || "Custom Type";
+    const result = archetypes[key] || "You tied on two or more categories.";
+
+// ADD TYING SYSTEM LATER
 
     document.getElementById("archetype-name").innerText = result;
     document.getElementById("archetype-desc").innerHTML =
