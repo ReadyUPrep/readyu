@@ -227,7 +227,7 @@ document.querySelectorAll('.question').forEach(q => {
   }
 });
 
-fetch("https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec", {
+fetch("https://script.google.com/macros/s/AKfycbwX43Vfj0kG2AbKdYpvDl87Go1q_aRSGuPw0hxIFE8p5eBNqiXy9oZAOotmrxdcYgmq/exec", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({ responses }) 
