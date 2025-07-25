@@ -232,7 +232,7 @@ document.querySelectorAll('.question').forEach(q => {
 fetch("https://script.google.com/macros/s/AKfycby2rZV1hbNZlDUjFgDPeoP6742REgMkvkKssOzatluS-1zfXdVMkD079S10_9qnjsai/exec", {
   method: "POST",
   mode: "cors",
-  headers: { "Content-Type": "application/json" },
+  headers: { "Content-Type": "text/plain;charset=utf-8" },
   body: JSON.stringify({ responses }) 
 })
   .then((res) => res.json())
