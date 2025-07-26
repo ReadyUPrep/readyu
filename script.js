@@ -183,7 +183,7 @@ window.onload = function () {
 
     const encodedData = encodeURIComponent(JSON.stringify(responses));
     const script = document.createElement("script");
-    script.src = `https://script.google.com/macros/s/AKfycbynVGPtzHWGh7eD4kYMxsey_AymR8K4nr55hMfoNZsTTxv1asLQGchpM4Zm7bl2MO2BwA/exec?callback=${callbackName}&data=${encodedData}`;
+    script.src = `https://script.google.com/macros/s/AKfycby2rZV1hbNZlDUjFgDPeoP6742REgMkvkKssOzatluS-1zfXdVMkD079S10_9qnjsai/exec?callback=${callbackName}&data=${encodedData}`;
     document.body.appendChild(script);
   });
 };
